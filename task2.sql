@@ -1,0 +1,1 @@
+select min(salary) as SecondHighestSalary from employee  where salary > (select min(salary) from employee)
